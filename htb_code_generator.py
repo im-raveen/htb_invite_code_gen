@@ -29,14 +29,14 @@ print("")
 
 
 
-subprocess.call("curl -XPOST https://www.hackthebox.eu/api/invite/generate", shell=True) #The command to get the encypted invite-code
+subprocess.call("curl -XPOST https://www.hackthebox.eu/api/invite/generate", shell=True) #from this you get encrypted code
 print('\n')
-api = str(input("copy the code you get and paste it here:\n==> ")) #To store the encrypted in a value
+api = str(input("copy the code you get and paste it here:\n==> ")) #cpopy and paste the value you get
 print('\n') #This string will produce a new line
-dec = str(base64.standard_b64decode(api)) #The Decrypted code after decoded
-print("[+]==> " + dec.replace('b', '')) #replacing th extra charater with a space
+dec = str(base64.standard_b64decode(api)) #This is the decryptor
+print("[+]==> " + dec.replace('b', '')) #replacing the extra crackers
 print('\n')
-print("GOT IT NOW COPY THE CODE YOU GOT WITHOUT " " and paste it in link given below ") #The correct invite code you get
+print("GOT IT NOW COPY THE CODE YOU GOT WITHOUT " " and paste it in link given below ") #The invite code
 print(" ")
 print(" ")
 print("https://www.hackthebox.eu/invite")
